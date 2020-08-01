@@ -2,10 +2,7 @@
 
  [最新文档，请访问我的个人网站](https://www.zhoutao123.com)
 
- 
-
-
-![https://pic.zhoutao123.com/github.png](https://pic.zhoutao123.com/github.png)
+ <img src="https://pic.zhoutao123.com/github.png">
 
 ### 📖 编程语言
 + ⛲️《[深入理解JVM虚拟机](https://www.zhoutao123.com/page/book/1)》
