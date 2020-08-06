@@ -30,11 +30,10 @@ HashMap内部的成员变量主要有：
 - locafactor: 负载因子
 - threshold： 最大的保存数 = size * loadfactor
 
-
 <br />
 <br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/437981/1588995562101-c8b2e556-b84a-4565-a994-ab3a68d716e2.png)<br />
 <br />
-<br />table 就是我们说的HashMap中的数组实现，其类型为HashMap.Node<> 定义如下:<br />
+table 就是我们说的HashMap中的数组实现，其类型为HashMap.Node<> 定义如下:<br />
 
 ```java
     static class Node<K,V> implements Map.Entry<K,V> {
@@ -52,10 +51,10 @@ HashMap内部的成员变量主要有：
     }
 ```
 
-<br />
-<br />
 
-<a name="1253i"></a>
+
+
+
 ### 构造方法
 
 - HashMap 总共有四种构造方法，日常工作中主要使用的也就两种: 
@@ -91,11 +90,11 @@ HashMap内部的成员变量主要有：
 ```
 
 
-<a name="l3LrP"></a>
+
 ## HashMap 添加元素
 
 
-<a name="na3Kb"></a>
+
 ### 添加元素
 向 HashMap对象中添加元素主要是: `public V put(K key, V value)` ,这是一个非常复杂的操作，其流程如下:
 ```java
@@ -166,7 +165,7 @@ HashMap内部的成员变量主要有：
 ```
 
 
-<a name="dnsen"></a>
+
 ### 调整数组大小
 HashMap经常会出现调整大小的问题，因此建议在构造HashMap的时候预估一个初始化大小，一般等于 `基本大小/负载因子 + 1`  这样可以防止出现过多的调整，提升HashMap的性能。
 ```java
@@ -254,13 +253,13 @@ final Node<K,V>[] resize() {
     }
 ```
 
-<br />
+
 
 > 总体看来，对于HashMap添加元素，其复杂性相对于List等实现还要高上一层。
 
 
 
-<a name="VzcmT"></a>
+
 ## HashMap 获取元素
 获取HashMap的预算使用方法  `public V get(Object key)`  来实现，这里看一下源码
 ```java
@@ -295,7 +294,7 @@ final Node<K,V>[] resize() {
 ```
 
 
-<a name="ZiHY5"></a>
+
 ## HashMap 移除元素
 
 
