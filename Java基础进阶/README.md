@@ -5,7 +5,7 @@
 3. Java并发编程以及原理
 4. JDK 的新特性
 
-<img src='https://pic.zhoutao123.com/blog/java/logo2.png'>
+<img src='https://pic.zhoutao123.com/blog/java/logo2.png' width='100%''>
 
 ### 🔀 并发编程
 
